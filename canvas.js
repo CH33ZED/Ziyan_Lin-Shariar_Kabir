@@ -1,7 +1,9 @@
 ﻿
             var a = document.getElementById("slate");
             var b = document.getElementById("clear");
-            var ctx = a.getContext(‘2d’); 
+			
+
+            var ctx = a.getContext('2d'); 
             var draw = function(event){       
                var c = event.clientX;
                var d = event.clientY;  
