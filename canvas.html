@@ -1,0 +1,27 @@
+﻿   <!DOCTYPE html>
+   
+        <html> 
+   
+        <style>
+      
+            #slate: {border: 1px solid black}
+  
+            var a = document.getElementById("slate");
+            var b = document.getElementById("clear");
+            Var ctx = a.getContext(‘2d’); 
+            var draw = function(event){         
+               ctx.fillRect(event.clientX, event.clientY, 10, 10)
+            }
+            a.addEventListener('click', draw);
+            var clean = function(e){
+               ctx.clearRect(0,0,500,300);
+            }
+            b.addEventListener('click', clean);
+        </style>
+   
+        <h1>Canvas Fun!</h1>
+   
+        <canvas width=“500” height=“300” id=“slate”></canvas>
+   
+        <button id="clear">clear</button>
+   </html> 
